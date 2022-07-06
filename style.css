@@ -252,3 +252,21 @@ body {
   background-color: #269aff;
   color: white;
 }
+
+/*browser screen*/
+/*when width > 900px*/
+@media (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+  }
+  /*class for the 3 div elements*/
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+  }
+  /*pseudo class*/
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
