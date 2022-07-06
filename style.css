@@ -182,3 +182,42 @@ body {
   /*allow to get to 100% width of parent div*/
   max-width: 100%;
 }
+
+/*class h1*/
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/*class all ul*/
+.pricing-features {
+  /*top rightleft bottom*/
+  margin: 50px 0 25px;
+  color: #016ff9;
+}
+
+/*class all li*/
+.pricing-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  /*topbot leftright*/
+  padding: 15px 0;
+  border-top: 1px solid #e1f1ff;
+}
+
+/*last li item in each div ul*/
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+/*class all span*/
+.pricing-price {
+  color: #016ff9;
+  /*span default inline*/
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
