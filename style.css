@@ -138,7 +138,7 @@ html {
 
 /*block elements + inline elements */
 body {
-  background-color: aqua;
+  background-color: #60a9ff;
   /*flex-direction:default row*/
   display: flex;
   /*main axis*/
@@ -220,4 +220,35 @@ body {
   display: block;
   font-size: 32px;
   font-weight: 700;
+}
+
+/*class all a*/
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348efe;
+  /*default inline - cant add padding etc*/
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  /*if more things change set it to - all*/
+  transition: background-color 200ms ease-in-out;
+}
+/*pseudo class*/
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #e1f1ff;
+}
+
+/*class a with 2 classes*/
+.pricing-button.is-featured {
+  background-color: #48aaff;
+  color: white;
+}
+/*pseudo class*/
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+  background-color: #269aff;
+  color: white;
 }
