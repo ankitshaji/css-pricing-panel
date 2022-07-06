@@ -128,15 +128,15 @@ table {
   border-spacing: 0;
 }
 
-/*new style*/
+/*New style*/
 
-/*box elemnts */
 html {
   /*includes border when setting with*/
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
 
+/*block elements + inline elements */
 body {
   background-color: aqua;
   /*flex-direction:default row*/
@@ -158,4 +158,27 @@ body {
   width: 100%;
   /*but only allow it to get to 960px*/
   max-width: 960px;
+
+  /*mobile first approach*/
+  display: flex;
+  /*default row*/
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*class for the 3 div elements*/
+.pricing-plan {
+  border-bottom: 1px solid #e1f1ff;
+}
+/*pseudo class*/
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+/*class for 3 img elements*/
+.pricing-img {
+  margin-bottom: 25px;
+  /*allow to get to 100% width of parent div*/
+  max-width: 100%;
 }
